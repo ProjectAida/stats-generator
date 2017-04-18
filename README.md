@@ -1,4 +1,4 @@
-Created by Yi Liu for Image Analysis for Archival Discovery.
+Created by Yi Liu (@IanDing-Yi) for Image Analysis for Archival Discovery.
 
 ## Installation ##
 
@@ -8,44 +8,39 @@ Created by Yi Liu for Image Analysis for Archival Discovery.
 
 2. Mac or Linux
 	- Install mono on your computer.
-	- Use "mono [application name]" to run this program.
+	- Use `mono [application name]` to run this program.
 
-
-
-## Run Program ##
+## Running the Program ##
 
 This program is a console program, which means it has to run in terminal (for Linux or Mac) or Command (for Windows)  
 1. Change your current directory to the location of the .exe file with either Terminal or Command  
 3. Use the following command to run this program
-	- For Windows, "1836_1840CaseStudy.exe [full path of file A] [full path of file B] [saving path for result]";
-	- For Mac or Linux, "mono 1836_1840CaseStudy.exe [full path of file A] [full path of file B] [saving path for result]";
+	- For Windows: `1836_1840CaseStudy.exe [full path of file A] [full path of file B] [saving path for result file]`
+	- For Mac or Linux: `mono 1836_1840CaseStudy.exe [full path of file A] [full path of file B] [saving path for result file]`
 
-### Detail explaination for three parameters ###
+### Detailed explanation for three parameters ###
 
-1. [full path of file A] is the full path for classifier results file, such as:
-	- For Windows, "G:/MyWorkspace/AidaVSProject/1836-1840 case study/aida-temp/classifier-pages-false.txt"
-	- For Mac or Linux, "/home/ian/workspace/classifier-pages-false.txt"
-	*** the string of path better be qouted by "", otherwise, the space or symbol in this string could cause problems.
+* [full path of file A] is the full path for a classifier results file, such as:
+	- Windows example: `G:/MyWorkspace/AidaVSProject/1836-1840 case study/aida-temp/classifier-pages-false.txt`
+	- Mac or Linux example: `/home/ian/workspace/classifier-pages-false.txt`
 
-2. [full path of file B] is the full path for ground truth results file, such as:
-	- For Windows, "G:/MyWorkspace/AidaVSProject/1836-1840 case study/aida-temp/ground-truth-pages-false.txt"
-	- For Mac or Linux, "/home/ian/workspace/ground-truth-pages-false.txt"
-	*** the string of path better be qouted by "", otherwise, the space or symbol in this string could cause problems.
+* [full path of file B] is the full path for a ground truth file, such as:
+	- Windows example: `G:/MyWorkspace/AidaVSProject/1836-1840 case study/aida-temp/ground-truth-pages-false.txt`
+	- Mac or Linux example: `/home/ian/workspace/ground-truth-pages-false.txt`
 
-3. [saving path for result] is the storage path for generated comparison .csv file. such as:
-	- For Windows, "G:/MyWorkspace/AidaVSProject/1836-1840 case study/aida-temp/"
-	- For Mac or Linux, "/home/ian/workspace/"
-	*** the string of path better be qouted by "", otherwise, the space or symbol in this string could cause problems.
+* [saving path for result] is the storage path for generated comparison .csv file, such as:
+	- Windows example: `G:/MyWorkspace/AidaVSProject/1836-1840 case study/aida-temp/`
+	- Mac or Linux example ``/home/ian/workspace/``
 
-### other important notices ###
+* For all parameters, the string of path better can be be quoted by "" if there are spaces or non alphanumeric characters in the path.
 
-1. The strings in each lines of the classifier results file and the strings in each lines of the ground truth result file have to be comparable. For example:
+### Other important notices ###
 
-In 1836-1840 case study, formation of strings in "classifier-pages-false.txt" is like "sn83016942_1839-03-14_ed-1_seq-4", while the formation of strings in "ground-truth-pages-false.txt" is like "sn83016942_1839-03-14_ed-1_seq-4_false.jpg". To make sure these two files are comparable, the "\_false.jpg" in "ground-truth-pages-false.txt" has to be deleted.
+1. The strings in each line of the classifier results file and the strings in each lines of the ground truth result file must  be comparable. For example, if the formation of strings in "classifier-pages-false.txt" is like "sn83016942_1839-03-14_ed-1_seq-4," while the formation of strings in "ground-truth-pages-false.txt" is like "sn83016942_1839-03-14_ed-1_seq-4_false.jpg," then to make the two files comparable, the "\_false.jpg" in "ground-truth-pages-false.txt" has to be deleted.
 
-2. There are three part in generated .csv file.
+2. There are three parts in the generated .csv file.
 	- The first part is the matched lines, and they will be labeled as 1;
-	- The second part is the mismatchd lines, and they will be labeled as 0;
-	- The third part is the lines contained in ground truth but not in classifier results, and they won't be labeled.
+	- The second part is the mismatched lines, and they will be labeled as 0;
+	- The third part is the lines contained in ground truth but not in classifier results; they won't be labeled.
 
-3. Before running: Make sure both files to be compared is not ocupied by other program, and make sure there is no file called "comparison result.csv" in target storage path.
+3. Before running: Make sure both files to be compared are not being used by another program and make sure there is no file called "comparison result.csv" in the target storage path.
