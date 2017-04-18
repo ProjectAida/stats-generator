@@ -1,16 +1,17 @@
 ## Contents ##
 * Introduction
-* Installation
+* Installation & Set-Up
 * Running the program
  - Basic commands
  - Detailed explanation of three parameters Directories and Files
 * Notes
 
 ## Introduction ##
-Created by Yi Liu (@IanDing-Yi) for Image Analysis for Archival Discovery.
+This program compares two files, one with ground truth determinations made by a person and one with classifications derived from our software, to determine precision and accuracy of the system. This program was created by Yi Liu (@IanDing-Yi) of the University of Nebraska-Lincoln for Image Analysis for Archival Discovery.
 
-## Installation ##
+## Installation & Set-Up ##
 
+### Installation ###
 1. Windows
 	- If you are using windows 7 or higher version of the Windows, there is no additional requirement for running this program.
 	- Otherwise, you need to install .Net Framework 2.0
@@ -18,6 +19,9 @@ Created by Yi Liu (@IanDing-Yi) for Image Analysis for Archival Discovery.
 2. Mac or Linux
 	- Install mono on your computer.
 	- Use `mono [application name]` to run this program.
+
+### Set-Up ###
+Running the program requires .txt files for comparison, e.g. "classifier-pages-false.txt" to be compared with "ground-truth-pages-false.txt," or "classifier-pages-true.txt" to be compared with "ground-truth-pages-true.txt."
 
 ## Running the Program ##
 
