@@ -1,3 +1,12 @@
+## Contents ##
+* Introduction
+* Installation
+* Running the program
+ - Basic commands
+ - Detailed explanation of three parameters Directories and Files
+* Notes
+
+## Introduction ##
 Created by Yi Liu (@IanDing-Yi) for Image Analysis for Archival Discovery.
 
 ## Installation ##
@@ -12,13 +21,14 @@ Created by Yi Liu (@IanDing-Yi) for Image Analysis for Archival Discovery.
 
 ## Running the Program ##
 
+### Basic commands ###
 This program is a console program, which means it has to run in terminal (for Linux or Mac) or Command (for Windows)  
 1. Change your current directory to the location of the .exe file with either Terminal or Command  
 3. Use the following command to run this program
 	- For Windows: `1836_1840CaseStudy.exe [full path of file A] [full path of file B] [saving path for result file]`
 	- For Mac or Linux: `mono 1836_1840CaseStudy.exe [full path of file A] [full path of file B] [saving path for result file]`
 
-### Detailed explanation for three parameters ###
+### Detailed explanation of three parameters ###
 
 * [full path of file A] is the full path for a classifier results file, such as:
 	- Windows example: `G:/MyWorkspace/AidaVSProject/1836-1840 case study/aida-temp/classifier-pages-false.txt`
@@ -34,7 +44,7 @@ This program is a console program, which means it has to run in terminal (for Li
 
 * For all parameters, the string of path better can be be quoted by "" if there are spaces or non alphanumeric characters in the path.
 
-### Other important notices ###
+### Notes ###
 
 1. The strings in each line of the classifier results file and the strings in each lines of the ground truth result file must  be comparable. For example, if the formation of strings in "classifier-pages-false.txt" is like "sn83016942_1839-03-14_ed-1_seq-4," while the formation of strings in "ground-truth-pages-false.txt" is like "sn83016942_1839-03-14_ed-1_seq-4_false.jpg," then to make the two files comparable, the "\_false.jpg" in "ground-truth-pages-false.txt" has to be deleted.
 
