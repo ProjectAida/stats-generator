@@ -2,8 +2,8 @@
 * Introduction
 * Installation & Set-Up
 * Running the program
- - Basic commands
- - Detailed explanation of three parameters Directories and Files
+  - Basic commands
+  - Detailed explanation of three parameters Directories and Files
 * Notes
 
 ## Introduction ##
@@ -48,7 +48,7 @@ This program is a console program, which means it has to run in terminal (for Li
 
 * For all parameters, the string of path better can be be quoted by "" if there are spaces or non alphanumeric characters in the path.
 
-### Notes ###
+## Notes ##
 
 1. The strings in each line of the classifier results file and the strings in each lines of the ground truth result file must  be comparable. For example, if the formation of strings in "classifier-pages-false.txt" is like "sn83016942_1839-03-14_ed-1_seq-4," while the formation of strings in "ground-truth-pages-false.txt" is like "sn83016942_1839-03-14_ed-1_seq-4_false.jpg," then to make the two files comparable, the "\_false.jpg" in "ground-truth-pages-false.txt" has to be deleted.
 
