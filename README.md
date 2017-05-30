@@ -7,7 +7,7 @@
 * Notes
 
 ## Introduction ##
-This program compares two files, one with ground truth determinations made by a person and one with classifications derived from our software, to determine precision and accuracy of the system. This program was created by Yi Liu (@IanDing-Yi) of the University of Nebraska-Lincoln for Image Analysis for Archival Discovery.
+This program compares two files, one with ground truth determinations made by a person and one with classifications derived from our software, to determine precision and accuracy of the system. This program was created by Yi Liu (@IanDing-Yi) of the University of Nebraska-Lincoln for Image Analysis for Archival Discovery. It is written in C#.NET 2.0.
 
 ## Installation & Set-Up ##
 
