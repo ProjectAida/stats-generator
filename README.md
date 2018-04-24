@@ -35,8 +35,8 @@ Running the program requires .txt files for comparison, e.g. "classifier-pages-f
 4. Third, change the groundtruth files's name into: (1)ground-truth-snippets-true.txt, (2)ground-truth-snippets-false.txt, (3)ground-truth-pages-true.txt, and (4)ground-truth-pages-false.txt.
 
 3. Fourth, use the following command to run this program
-	- For Windows, "StatsGenerator.exe [Directory] [Directory]";
-	- For Mac or Linux, "mono StatsGenerator.exe [Directory] [Directory]";
+	- For Windows, "StatsGenerator.exe [SourceFileDirectory] [TargetStorageDirectory]";
+	- For Mac or Linux, "mono StatsGenerator.exe [SourceFileDirectory] [TargetStorageDirectory]";
 
 ### Detailed explanation of three parameters (new solution)###
 1. [Directory]
