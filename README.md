@@ -39,10 +39,10 @@ Running the program requires .txt files for comparison, e.g. "classifier-pages-f
 	- For Mac or Linux, "mono StatsGenerator.exe [SourceFileDirectory] [TargetStorageDirectory]";
 
 ### Detailed explanation of three parameters (new solution)###
-1. [Directory]
+1. [SourceFileDirectory]
 	This is the path of the files location for comparison.
 
-2. [Directory]
+2. [TargetStorageDirectory]
 	This is the path of the output folder.
 
 ### Basic commands (old solution)###
